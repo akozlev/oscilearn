@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.CompoundButton;
+import android.widget.ProgressBar;
 import android.widget.Switch;
 
 import org.puredata.android.io.AudioParameters;
@@ -15,7 +16,7 @@ import org.puredata.core.utils.IoUtils;
 import java.io.File;
 import java.io.IOException;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
     private PdUiDispatcher dispatcher;
     private void initPd() throws IOException{
         int sampleRAte = AudioParameters.suggestSampleRate();
@@ -25,7 +26,8 @@ public class MainActivity extends AppCompatActivity {
         PdBase.setReceiver(dispatcher);
     }
     private void initGui(){
-        Switch onOffSwitch = (Switch) findViewById(R.id.onOff);
+        mProgressBar = findViewById(R.id.progressBar);
+        /*Switch onOffSwitch = findViewById(R.id.onOff);
         onOffSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -33,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
                 float val = (isChecked) ? 1.0f : 0.0f;
                 PdBase.sendFloat("onOff",val);
             }
-        });
+        });*/
     }
     private void loadPdPatch() throws IOException{
         File dir = getFilesDir();
