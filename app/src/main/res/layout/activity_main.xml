@@ -1,27 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
-<android.support.v7.widget.Toolbar
-    android:id="@+id/my_toolbar"
-    android:layout_width="match_parent"
-    android:layout_height="?attr/actionBarSize"
-    android:background="?attr/colorPrimary"
-    android:elevation="4dp"
-    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-    app:layout_constraintTop_toTopOf="parent"/>
 
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        android:indeterminate="true"
+    <Toolbar
+        android:id="@+id/navBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@android:style/Widget.ProgressBar.Horizontal"
-        app:layout_constraintTop_toBottomOf="parent"/>
+        android:background="@color/colorPrimary">
+        <TextView
+            android:text="@string/app_name"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </Toolbar>
 
-</android.support.constraint.ConstraintLayout>
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:background="@android:color/transparent"
+        android:layout_height="8dp">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:indeterminate="true"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_gravity="top"
+            android:indeterminateTint="@color/colorAccent"
+            android:layout_marginTop="-3dp"
+            style="@android:style/Widget.Material.ProgressBar.Horizontal" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

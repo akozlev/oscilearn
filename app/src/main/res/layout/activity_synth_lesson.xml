@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SynthLesson">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:transformPivotX="5dp"
+        app:layout_constraintStart_toEndOf="parent"
+        tools:layout_editor_absoluteY="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:minHeight="?attr/actionBarSize"
+            app:titleTextColor="@color/colorPrimaryDark">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Toolbar Title"
+                android:textColor="@color/colorPrimaryText" />
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimaryLight"
+            android:orientation="horizontal"
+            android:paddingVertical="5dp">
+
+            <it.beppi.knoblibrary.Knob
+                android:id="@+id/knob"
+                android:layout_width="64dp"
+                android:layout_height="70dp"
+                android:layout_marginVertical="10dp"
+                android:layout_weight="2"
+                app:kBalloonValuesRelativePosition="1.4"
+                app:kBalloonValuesSlightlyTransparent="true"
+                app:kBalloonValuesTimeToLive="0"
+                app:kBorderColor="@color/colorPrimaryLight"
+                app:kBorderWidth="5dp"
+                app:kCircularIndicatorColor="@color/colorAccentDark"
+                app:kCircularIndicatorRelativePosition="0.58"
+                app:kCircularIndicatorRelativeRadius="0.09"
+                app:kFreeRotation="false"
+                app:kIndicatorColor="@color/colorAccentDark"
+                app:kIndicatorRelativeLength="0.4"
+                app:kIndicatorWidth="5dp"
+                app:kKnobCenterColor="@color/colorPrimaryLight"
+                app:kKnobCenterRelativeRadius="0.09"
+                app:kKnobColor="@color/colorPrimaryDark"
+                app:kKnobDrawableRotates="true"
+                app:kKnobRelativeRadius="1"
+                app:kMaxAngle="130"
+                app:kMinAngle="-130"
+                app:kNumberOfStates="7"
+                app:kSelectedStateMarkerColor="@color/colorPrimaryLight"
+                app:kShowBalloonValues="true"
+                app:kStateMarkersColor="@color/colorPrimaryLight"
+                app:kStateMarkersRelativeLength="0.15"
+                app:kStateMarkersWidth="5dp"
+                app:kSwipe="vertical_horizontal" />
+
+            <it.beppi.knoblibrary.Knob
+                android:id="@+id/knob3"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginVertical="10dp"
+                android:layout_weight="2"
+                app:kBalloonValuesRelativePosition="1.4"
+                app:kBalloonValuesSlightlyTransparent="true"
+                app:kBalloonValuesTimeToLive="0"
+                app:kBorderColor="@color/colorPrimaryLight"
+                app:kBorderWidth="5dp"
+                app:kCircularIndicatorColor="@color/colorAccentDark"
+                app:kCircularIndicatorRelativePosition="0.58"
+                app:kCircularIndicatorRelativeRadius="0.09"
+                app:kFreeRotation="false"
+                app:kIndicatorColor="@color/colorAccent"
+                app:kIndicatorRelativeLength="0.4"
+                app:kIndicatorWidth="5dp"
+                app:kKnobCenterColor="@color/colorPrimary"
+                app:kKnobCenterRelativeRadius="0.09"
+                app:kKnobColor="@color/colorPrimaryDark"
+                app:kKnobDrawableRotates="true"
+                app:kKnobRelativeRadius="1"
+                app:kMaxAngle="130"
+                app:kMinAngle="-130"
+                app:kNumberOfStates="7"
+                app:kSelectedStateMarkerColor="@color/colorPrimary"
+                app:kShowBalloonValues="true"
+                app:kStateMarkersColor="@color/colorPrimary"
+                app:kStateMarkersRelativeLength="0.15"
+                app:kStateMarkersWidth="5dp"
+                app:kSwipe="vertical_horizontal" />
+
+            <LinearLayout
+                android:layout_width="240dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginVertical="10dp"
+                android:background="@color/colorPrimaryLight"
+                android:orientation="vertical"
+                android:paddingTop="15dp"
+                android:rotation="90">
+
+                <SeekBar
+                    android:id="@+id/seekBar6"
+                    style="@android:style/Widget.Material.SeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:indeterminate="false"
+                    android:layoutDirection="rtl"
+                    android:max="100"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:paddingBottom="30dp"
+                    android:progress="35"
+                    android:progressBackgroundTint="@color/colorPrimaryDark"
+                    android:progressTint="@color/colorAccent"
+                    android:scrollbarSize="12dp"
+                    android:soundEffectsEnabled="false"
+                    android:thumbTint="@color/colorAccentDark"
+                    android:tickMarkTint="@color/colorAccent" />
+
+                <SeekBar
+                    android:id="@+id/seekBar2"
+                    style="@android:style/Widget.Material.SeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:indeterminate="false"
+                    android:layoutDirection="rtl"
+                    android:max="100"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:paddingBottom="30dp"
+                    android:progress="35"
+                    android:progressBackgroundTint="@color/colorPrimaryDark"
+                    android:progressTint="@color/colorAccent"
+                    android:scrollbarSize="12dp"
+                    android:soundEffectsEnabled="false"
+                    android:thumbTint="@color/colorAccentDark"
+                    android:tickMarkTint="@color/colorAccent" />
+
+                <SeekBar
+                    android:id="@+id/seekBar3"
+                    style="@android:style/Widget.Material.SeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:indeterminate="false"
+                    android:layoutDirection="rtl"
+                    android:max="100"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:paddingBottom="30dp"
+                    android:progress="35"
+                    android:progressBackgroundTint="@color/colorPrimaryDark"
+                    android:progressTint="@color/colorAccent"
+                    android:scrollbarSize="12dp"
+                    android:soundEffectsEnabled="false"
+                    android:thumbTint="@color/colorAccentDark"
+                    android:tickMarkTint="@color/colorAccent" />
+
+                <SeekBar
+                    android:id="@+id/seekBar5"
+                    style="@android:style/Widget.Material.SeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:indeterminate="false"
+                    android:layoutDirection="rtl"
+                    android:max="100"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:paddingBottom="30dp"
+                    android:progress="35"
+                    android:progressBackgroundTint="@color/colorPrimaryDark"
+                    android:progressTint="@color/colorAccent"
+                    android:scrollbarSize="12dp"
+                    android:soundEffectsEnabled="false"
+                    android:thumbTint="@color/colorAccentDark"
+                    android:tickMarkTint="@color/colorAccent" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
