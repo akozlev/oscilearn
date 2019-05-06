@@ -1,14 +1,22 @@
 <!--?xml version="1.0" encoding="UTF-8"?-->
 <resources>
-  <color name="colorPrimary">#37474F</color>
-  <color name="colorPrimaryLight">#62727B</color>
-  <color name="colorPrimaryDark">#102027</color>
-  <color name="colorPrimaryText">#FFFFFF</color>
-  <color name="colorSecondary">#90A4AE</color>
-  <color name="colorSecondaryLight">#c1d5e0</color>
-  <color name="colorSecondaryDark">#62757F</color>
-  <color name="colorSecondaryText">#000000</color>
-  <color name="colorAccent">#1976D2</color>
-  <color name="colorAccentLight">#63a4ff</color>
-  <color name="colorAccentDark">#004BA0</color>
+  <!--Primary Colors-->
+  <color name="colorPrimary">#2196F3</color>
+  <color name="colorPrimaryLight">#6EC6FF</color>
+  <color name="colorPrimaryDark">#0069C0</color>
+  <!--Secondary Colors-->
+  <color name="colorSecondary">#64B5F6</color>
+  <color name="colorSecondaryLight">#9BE7FF</color>
+  <color name="colorSecondaryDark">#2286C3</color>
+  <!--Accent Colors-->
+  <color name="colorAccent">#FF9100</color>
+  <color name="colorAccentLight">#FFC246</color>
+  <color name="colorAccentDark">#C56200</color>
+  <!--Text Colors-->
+  <color name="colorPrimaryText">#000000</color>
+  <color name="colorSecondaryText">#FFFFFF</color>
+  <!--Background Colors-->
+  <color name="colorBackground">#E0E0E0</color>
+  <color name="colorBackgroundLight">#F5F5F5</color>
+  <color name="colorBackgroundDark">#BDBDBD</color>
 </resources>

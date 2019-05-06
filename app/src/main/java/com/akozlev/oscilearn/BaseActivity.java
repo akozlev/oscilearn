@@ -7,6 +7,9 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.ProgressBar;
 
+import org.puredata.android.io.PdAudio;
+import org.puredata.core.PdBase;
+
 @SuppressLint("Registered")
 public class BaseActivity extends AppCompatActivity {
 
@@ -36,5 +39,17 @@ public class BaseActivity extends AppCompatActivity {
     public void onStop(){
         super.onStop();
         hideProgressBar();
+    }
+     @Override
+    protected void onResume() {
+        super.onResume();
+        PdAudio.startAudio(this);
+
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        PdAudio.stopAudio();
     }
 }
