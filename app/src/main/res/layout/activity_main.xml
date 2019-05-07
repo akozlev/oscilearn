@@ -1,60 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    android:orientation="vertical"
     tools:context=".MainActivity">
-
-    <FrameLayout
-        android:id="@+id/frameLayout"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="8dp"
-        android:background="@android:color/transparent">
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent">
 
-        <ProgressBar
-            android:id="@+id/progressBar"
-            style="@android:style/Widget.Material.ProgressBar.Horizontal"
+
+        <TextView
+            android:id="@+id/title"
             android:layout_width="match_parent"
-            android:layout_height="8dp"
-            android:layout_gravity="top"
-            android:layout_marginTop="-3dp"
-            android:indeterminate="true"
-            android:indeterminateTint="@color/colorAccent" />
+            android:layout_height="wrap_content"
+            android:text="@string/oscilearn"
+            android:textAlignment="center"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingHorizontal="50dp"
+            app:srcCompat="@drawable/oscilearn_logo_white" />
 
-    </FrameLayout>
+        <Button
+            android:id="@+id/btnBeginLearning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/colorAccent"
+            android:elevation="10dp"
+            android:layout_marginHorizontal="80dp"
+            android:text="@string/begin_learning"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:text="OsciLearn"
-        android:textAlignment="center"
-        android:textColor="@color/colorSecondaryText"
-        android:textSize="36sp"
-        android:textStyle="bold" />
 
-    <android.support.v7.widget.AppCompatImageView
-        android:layout_width="match_parent"
-        android:layout_height="439dp"
-        android:paddingHorizontal="50dp"
-        android:scaleType="centerInside"
-        app:srcCompat="@drawable/oscilearn_logo_white" />
-
-    <Button
-        android:id="@+id/btnBeginLearning"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginEnd="60dp"
-        android:backgroundTint="@color/colorAccent"
-        android:elevation="10dp"
-        android:text="Begin Learning"
-        android:textColor="@color/colorSecondaryText"
-        android:textSize="24sp"
-        android:textStyle="bold" />
-
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>

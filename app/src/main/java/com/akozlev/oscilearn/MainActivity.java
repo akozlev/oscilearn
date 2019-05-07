@@ -23,6 +23,7 @@ import java.io.IOException;
 
 public class MainActivity extends BaseActivity {
     private PdUiDispatcher dispatcher;
+    TextView textView;
     Button button;
     Animation frombottom;
     Animation outbottom;
@@ -35,7 +36,9 @@ public class MainActivity extends BaseActivity {
     private void initGui(){
 
         button = findViewById(R.id.btnBeginLearning);
-        mProgressBar = findViewById(R.id.progressBar);
+        textView = findViewById(R.id.title);
+        textView.animate().alpha(0).setDuration(1000);
+        textView.animate().alpha(1);
 
         outbottom = AnimationUtils.loadAnimation(this,R.anim.outbottom);
         frombottom = AnimationUtils.loadAnimation(this,R.anim.frombottom);
@@ -44,7 +47,7 @@ public class MainActivity extends BaseActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                button.animate().translationY(200).withEndAction(new Runnable() {
+                button.animate().translationY(300).withEndAction(new Runnable() {
                     @Override
                     public void run() {
                         setContentView(R.layout.activity_synth_lesson);

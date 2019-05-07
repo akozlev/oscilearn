@@ -14,4 +14,6 @@
         completions."
     </string>
     <string name="title_activity_email_password">EmailPasswordActivity</string>
+    <string name="begin_learning">Begin Learning</string>
+    <string name="oscilearn">OsciLearn</string>
 </resources>
