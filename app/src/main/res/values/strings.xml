@@ -16,4 +16,9 @@
     <string name="title_activity_email_password">EmailPasswordActivity</string>
     <string name="begin_learning">Begin Learning</string>
     <string name="oscilearn">OsciLearn</string>
+    <string-array name="oscillators">
+        <item>Sine</item>
+        <item>Triangle</item>
+        <item>Square</item>
+    </string-array>
 </resources>

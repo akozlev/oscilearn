@@ -19,8 +19,6 @@
   <color name="colorBackground">#E0E0E0</color>
   <color name="colorBackgroundLight">#F5F5F5</color>
   <color name="colorBackgroundDark">#BDBDBD</color>
-  <color name="color1">#81C784</color>
-  <color name="color2">#9575CD</color>
-  <color name="color3">#F06292</color>
-  <color name="color4">#FFF176</color>
+  <color name="colorCompleted">#4CAF50</color>
+  <color name="colorNotCompleted">#FFC107</color>
 </resources>

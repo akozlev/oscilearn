@@ -1,40 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.CardView android:elevation="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:backgroundTint="@color/colorBackground"
-    android:orientation="vertical"
-    android:gravity="center_vertical"
-    android:elevation="10dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="15dp"
-        android:clickable="true"
-        android:layout_margin="10dp"
-        >
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    android:clickable="true"
+    app:cardElevation="2dp"
+    android:layout_margin="5dp" >
         <LinearLayout
-            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:background="@color/colorBackground"
             android:layout_width="match_parent"
-            android:layout_height="600dp">
-            <ImageView
-                android:id="@+id/imgCover"
-                android:src="@drawable/blacksynth"
-                android:scaleType="centerCrop"
-                android:layout_width="match_parent"
-                android:layout_height="450dp" />
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
             <TextView
-                android:id="@+id/strTitle"
-                android:text="TExt"
-                android:textSize="23dp"
+                android:textColor="@color/colorPrimaryText"
+                android:id="@+id/txtLessonNumber"
+                android:text="1."
+                android:layout_weight="0"
+                android:textSize="24sp"
                 android:paddingStart="10dp"
-                android:layout_width="match_parent"
+                android:paddingEnd="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <TextView
-                android:id="@+id/strDescription"
-                android:layout_width="match_parent"
+                android:textColor="@color/colorPrimaryText"
+                android:text="Lesson name"
+                android:textSize="24sp"
+                android:paddingHorizontal="5dp"
+                android:id="@+id/txtLessonName"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
+            <ImageView
+                android:contentDescription="completetion"
+                android:id="@+id/imgCompleted"
+                android:layout_marginEnd="5dp"
+                android:tint="@color/colorCompleted"
+                android:src="@drawable/ic_check"
+                android:layout_width="30dp"
+                android:layout_height="40dp" />
         </LinearLayout>
-    </android.support.v7.widget.CardView>
-</LinearLayout>
+</android.support.v7.widget.CardView>
